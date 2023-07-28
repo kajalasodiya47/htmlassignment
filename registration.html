@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        /* body tag */
+        body {
+            background-color: #AD1E5C;
+            padding-top: 50px;
+        }
+
+        /* universal selector */
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* table tag */
+        table {
+            padding: 20px 80px;
+            background-color: #5f192f;
+        }
+
+        /* td tag */
+        td {
+            padding: 5px;
+        }
+
+        /* label tag */
+        label {
+            color: white;
+            font-weight: bold;
+        }
+
+        /* css apply in all input tags */
+        input,
+        textarea,
+        select {
+            outline: none;
+        }
+
+        /* submit button */
+        input[type="submit"] {
+            padding: 8px 150px;
+            border: 1px solid white;
+            border-radius: 5px;
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <!-- table start --------------------------------------------->
+        <table>
+            <!-- form start ------------------------------------------>
+            <form method="post">
+                <tr>
+                    <!-- Name ---------------------------------------->
+                    <td><label>Name:</label></td>
+                    <td><input type="text" placeholder="your name"></td>
+                </tr>
+                <tr>
+                    <!-- Email --------------------------------------->
+                    <td><label>Email:</label></td>
+                    <td><input type="email" placeholder="your email"></td>
+                </tr>
+                <tr>
+                    <!-- Password ------------------------------------->
+                    <td><label>Password:</label></td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <!-- Phone number ---------------------------------->
+                    <td><label>Phone Number:</label></td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <!-- Gender ---------------------------------------->
+                    <td><label>Gender:</label></td>
+                    <td><label for="male">Male:</label><input type="radio" name="gender" id="male">
+                        <label for="female">Female:</label><input type="radio" name="gender" id="female">
+                        <label for="other">Other:</label><input type="radio" name="gender" id="other">
+                    </td>
+                </tr>
+                <tr>
+                    <!-- Language --------------------------------------->
+                    <td><label>language</label></td>
+                    <td> <select>
+                            <option selected disabled>Select language</option>
+                            <option>Hindi</option>
+                            <option>Gujarati</option>
+                            <option>English</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <!-- Zip code --------------------------------------->
+                    <td><label>Zip Code:</label></td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <!-- About ------------------------------------------>
+                    <td><label>About:</label></td>
+                    <td><textarea cols="22" placeholder="Write about yourself..."></textarea></td>
+                </tr>
+                <tr>
+                    <!-- Submit button ----------------------------------->
+                    <td colspan="2" align="center"><input type="submit" value="Register"></td>
+                </tr>
+            </form>
+            <!-- form end ------------------------------------------------->
+        </table>
+        <!-- table end ---------------------------------------------------->
+    </center>
+</body>
+
+</html>

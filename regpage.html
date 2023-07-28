@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Individual Registration</title>
+
+</head>
+<style>
+   /* CSS apply in all tags */
+   * {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+   }
+
+   /* header CSS*/
+   .header {
+      text-align: center;
+      margin-left: 250px;
+      margin-right: 250px;
+      background-image: linear-gradient(rgb(149, 196, 214), rgb(137, 207, 235), rgb(92, 92, 224), rgb(0, 0, 255));
+   }
+
+   /* main section CSS */
+   .main {
+      background-color: #cdf0fd;
+      margin-left: 250px;
+      margin-right: 250px;
+      color: blue;
+      padding: 10px;
+   }
+
+   .loginbox {
+      height: 70px;
+      display: flex;
+   }
+
+   .spacebox {
+      height: inherit;
+      width: 30%;
+   }
+
+   .login {
+      height: inherit;
+      width: 45%;
+      text-align: right;
+   }
+
+   .personal {
+      height: 100px;
+      display: flex;
+   }
+
+   .spacebox1 {
+      height: inherit;
+      width: 5%;
+   }
+
+   .personal1 {
+      height: inherit;
+      width: 46%;
+      text-align: right;
+   }
+
+   .personal2 {
+      padding-left: 25px;
+      height: inherit;
+      width: 40%;
+      text-align: right;
+   }
+
+   .account {
+      height: 60px;
+      display: flex;
+   }
+
+   .spacebox2 {
+      height: inherit;
+      width: 10%;
+   }
+
+   .account1 {
+      height: inherit;
+      width: 45%;
+   }
+
+   .account2 {
+      height: inherit;
+      width: 40%;
+      text-align: right;
+   }
+
+   /* CSS for input, select tag */
+   input,
+   select {
+      margin-bottom: 5px;
+      border: 1px solid blue;
+      outline: 1px solid blue;
+   }
+
+   /* CSS for label tag */
+   label {
+      margin-right: 5px;
+   }
+
+   /* CSS for pre tag */
+   pre {
+      white-space: pre-line;
+   }
+
+   /* CSS for Submit button */
+   input[type="Submit"] {
+      color: white;
+      background-image: linear-gradient(rgb(0, 0, 255), rgb(96, 157, 182), rgb(0, 0, 255));
+   }
+
+   /* CSS for reset button */
+   input[type="Reset"] {
+      color: white;
+      margin-left: 10px;
+      background-image: linear-gradient(rgb(0, 0, 255), rgb(96, 157, 182), rgb(0, 0, 255));
+   }
+</style>
+
+<body>
+   <!-- Header ------------------------------------------------------->
+   <div class="header">
+      <h2>
+         <font color="red">Individual Registration</font>
+      </h2>
+   </div>
+   <!-- Main Section ------------------------------------------------->
+   <div class="main">
+      <div>
+         <h3>
+            <font color="red">User Particulars</font>
+         </h3>
+      </div>
+      <div class="loginbox">
+         <div class="spacebox"></div>
+         <div class="login">
+            <!-- Login --------------------------------------------->
+            <lable style="margin-right: 5px;">
+               <font color="red">*</font>Login ID
+            </lable><input type="text"><br>
+            <!-- Password ------------------------------------------>
+            <lable style="margin-right: 5px;">
+               <font color="red">*</font>Password
+            </lable><input type="password"><br>
+            <!-- Confirm Password ---------------------------------->
+            <lable style="margin-right: 5px;">
+               <font color="red">*</font>Confirm Password
+            </lable><input type="password">
+         </div>
+      </div>
+      <div>
+         <h3>
+            <font color="red">Personal Particulars</font>
+         </h3>
+      </div>
+      <div class="personal">
+         <div class="spacebox1"></div>
+         <div class="personal1">
+            <!-- Salutation ----------------------------------------->
+            <label>
+               <font color="red">*</font>Salutation
+            </label><select style="width: 70px; margin-right: 123px;">
+               <option>Select</option>
+            </select><br>
+            <!-- Middle name ---------------------------------------->
+            <label>
+               <font color="red">*</font>Middle Name
+            </label><input type="text"><br>
+            <!-- Resident status ------------------------------------>
+            <label>
+               <font color="red">*</font>Resident Status
+            </label><select style="width: 140px; margin-right: 53px;">
+               <option>Select</option>
+            </select><br>
+            <!-- Email-id ------------------------------------------->
+            <label>
+               <font color="red">*</font>Email-Id
+            </label><input type="email">
+         </div>
+         <div class="personal2">
+            <!-- First Name ------------------------------------------>
+            <label>
+               <font color="red">*</font>First Name
+            </label><input type="text"><br>
+            <!-- Last Name ------------------------------------------->
+            <label>
+               <font color="red">*</font>Last Name
+            </label><input type="text"><br>
+            <!-- Country --------------------------------------------->
+            <label>
+               <font color="red">*</font>Country
+            </label><select style="width: 130px; margin-right: 63px;">
+               <option>select</option>
+            </select><br>
+            <!-- Mobile Number --------------------------------------->
+            <label>
+               <font color="red">*</font>Mobile Number
+            </label><input type="text">
+         </div>
+      </div>
+      <div>
+         <h3>
+            <font color="red">Account Particulars</font>
+         </h3>
+      </div>
+      <div class="account">
+         <div class="spacebox2"></div>
+         <div class="account1">
+            <!-- 15 Digit Account No ---------------------------------->
+            <label>
+               <font color="red">*</font>15 Digit Account No
+            </label><input type="text">
+            <!-- Fund Transfer ---------------------------------------->
+            <label>
+               <font color="red">*</font>Fund Transfer
+            </label><select style="width: 70px; margin-left: 43px;">
+               <option>Select</option>
+            </select>
+         </div>
+         <div class="account2">
+            <!-- Nick Name -------------------------------------------->
+            <label>
+               <font color="red">*</font>Nick Name
+            </label><input type="text">
+         </div>
+      </div>
+
+      <div>
+         <h3>
+            <font color="red">DECLARATION</font>
+         </h3>
+      </div>
+      <div>
+         <pre>
+        I have read, understood and hereby agree to the Terms and Conditions in respect of all products and 
+        channels.
+        I understand that any changes in the terms and conditions applicable to this relationship would be made
+        available to me on request at any IOB branches.I confirm that all accounts under this login name are
+        operated singly and in case of joint account operated by either or survivor/anyone or survivor(s) under
+        his/her joint name respectively.I do hereby declare that information furnished in this form is true to the
+         best of my knowledge and belief.
+      </pre>
+      </div>
+      <div style="text-align: center;">
+         <!-- Submit, Reset button -------------------------------------->
+         <input type="Submit"><input type="Reset">
+      </div>
+
+   </div>
+</body>
+
+</html>
